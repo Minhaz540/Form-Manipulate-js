@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="heading">
+            <h1>Education</h1>
+            <small>Add information about your educational background</small>
+        </div>
+        <form action="#" onsubmit="confirmSave();">
+            <div class="formLine">
+                <div class="inputBoxLeft">
+                    <label for="school_name">School name</label>
+                    <input type="text" name="school_name" placeholder="e.g. Harvard University" required>
+                </div>
+                <div class="inputBoxRight">
+                    <label for="city">City</label>
+                    <input type="text" name="city" placeholder="e.g. San Francisco" required>
+                </div>
+            </div>
+
+            <div class="formLine">
+                <div class="inputBoxLeft">
+                    <label for="state">State</label>
+                    <input type="text" name="state" placeholder="e.g. California" required>
+                </div>
+                <div class="inputBoxRight">
+                    <label for="select_a_degree">Select a degree</label>
+                    <select name="select_a_degree" id="selectDegree" onchange="showHideCustomDegree(this.value);">
+                        <option value="--Select Degree--">--Select Degree--</option>
+                        <option value="Custom Degree">Custom Degree</option>
+                        <option value="Bachelor degree">Bachelor degree</option>
+                        <option value="Ordinary Degree">Ordinary Degree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="formLine single">
+                <div class="inputBoxRight">
+                    <input type="text" name="state" id="state" placeholder="e.g. certificate of studies" required disabled>
+                </div>
+            </div>
+
+            <div class="formLine">
+                <div class="inputBoxLeft">
+                    <label for="study">Field of study</label>
+                    <input type="text" name="state" placeholder="e.g. Engineering" required>
+                </div>
+                <div class="inputBoxRight">
+                    <label for="graduation_date">Graduation date</label>
+                    <div class="eduction">
+                        <select name="eduction" id="selectMonth">
+                            <option value="Month">Month</option>
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun">Jun</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                        </select>
+                        <select name="eduction" id="selectYear">
+                            <option value="Year">Year</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="formLine single">
+                <div class="inputBoxRight check">
+                    <input type="checkbox" name="check" id="checkBox" oninput="enableDisableGraduationDate(this);">
+                    <label for="checkbox">I presently attend here</label>
+                </div>
+            </div>
+
+            <div class="formLine button">
+                <button type="button">Back</button>
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

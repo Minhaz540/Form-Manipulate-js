@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+main {
+	width: 800px;
+	background-color: rgb(241, 241, 241);
+	padding: 25px;
+}
+.heading {
+	margin-bottom: 50px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 19px;
+}
+.formLine {
+	display: flex;
+	justify-content: space-between;
+}
+.formLine .inputBoxLeft,
+.formLine .inputBoxRight {
+	display: flex;
+	flex-direction: column;
+}
+.formLine .inputBoxLeft label,
+.formLine .inputBoxRight label {
+	margin-bottom: 8px;
+}
+.inputBoxLeft input,
+.inputBoxRight input,
+.inputBoxRight #selectDegree {
+	padding: 8px 12px;
+	width: 350px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.inputBoxRight #selectDegree {
+	border: 2px solid #2ebe6e;
+}
+.formLine.single {
+	justify-content: right;
+}
+.eduction {
+	display: flex;
+	gap: 15px;
+}
+.eduction select {
+	padding: 8px 12px;
+	width: 168px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.inputBoxRight.check {
+	display: flex;
+	width: 354px;
+	flex-direction: row;
+	justify-content: left;
+}
+.inputBoxRight.check #checkBox {
+	width: 24px;
+	cursor: pointer;
+}
+input[type="checkbox"] {
+    filter: hue-rotate(240deg);
+    -webkit-filter: hue-rotate(240deg);
+}
+.formLine.button button {
+    width: 100px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    background-color: #dbdbdb;
+    transition: background-color, 0.3s;
+    -webkit-transition: background-color, 0.3s;
+    -moz-transition: background-color, 0.3s;
+    -ms-transition: background-color, 0.3s;
+    -o-transition: background-color, 0.3s;
+}
+.formLine.button button:last-child {
+	background-color: #fe8c26;
+	color: white;
+	border: none;
+}
+.formLine.button button:hover {
+	background-color: #ccc7c3;
+}
